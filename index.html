@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La Délicieuserie — Biscuiterie artisanale & personnalisée</title>
-  <meta name="description" content="Biscuiterie artisanale à Calais. Sablés personnalisés pour événements, cadeaux d’entreprise et gourmandises du quotidien.">
+  <meta name="description" content="Biscuiterie artisanale à Calais. Sablés personnalisés pour événements, cadeaux d’entreprise et attentions gourmandes.">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -43,19 +44,19 @@
       <a href="#contact">Contact</a>
     </nav>
   </div>
+</header>
 
-  <div class="hero" role="presentation">
-    <div class="container hero__content">
-      <p class="hero__subtitle">Biscuiterie sur‑mesure</p>
-      <h1 class="hero__title">Sablés artisanaux <br/>à votre image</h1>
-      <p class="hero__text">Forme, taille, message, logo… nous personnalisons chaque biscuit pour vos événements, cadeaux d’entreprise et attentions gourmandes.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#contact">Demander un devis</a>
-        <a class="btn btn--ghost" href="#produits">Découvrir nos biscuits</a>
-      </div>
+<section class="hero" role="presentation">
+  <div class="container hero__content">
+    <p class="hero__subtitle">Biscuiterie sur‑mesure</p>
+    <h1 class="hero__title">Sablés artisanaux <br/>à votre image</h1>
+    <p class="hero__text">Forme, taille, message, logo… nous personnalisons chaque biscuit pour vos événements, cadeaux d’entreprise et attentions gourmandes.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#contact">Demander un devis</a>
+      <a class="btn btn--ghost" href="#produits">Découvrir nos biscuits</a>
     </div>
   </div>
-</header>
+</section>
 
 <main id="main">
   <section class="highlights" aria-labelledby="highlights-title">
@@ -85,40 +86,67 @@
     <div class="container">
       <div class="section-intro">
         <h2 class="section-title">Nos biscuits</h2>
-        <p class="section-subtitle">Sablés pur beurre, recettes gourmandes et options végétales.</p>
+        <p class="section-subtitle">Sablés pur beurre & créations personnalisées — options sans gluten / végétales sur demande.</p>
       </div>
-      <div class="grid-produits">
-        <article class="card-produit">
-          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80" alt="Sablés classiques dorés">
-          <div class="inner">
-            <span class="badge">Classiques</span>
-            <h3>Sablé doré</h3>
-            <p>Le sablé iconique, fondant et croustillant. Personnalisation du message possible.</p>
-          </div>
-        </article>
-        <article class="card-produit">
-          <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80" alt="Sablés chocolat">
-          <div class="inner">
-            <span class="badge">Chocolat</span>
-            <h3>Sablé cacao</h3>
-            <p>Un goût intense et généreux. Lettrage et motifs au choix.</p>
-          </div>
-        </article>
-        <article class="card-produit">
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80" alt="Sablés aux fruits secs">
-          <div class="inner">
-            <span class="badge">Créations</span>
-            <h3>Sablé signature</h3>
-            <p>Recettes sur‑mesure pour vos événements : couleurs, formes et textures.</p>
-          </div>
-        </article>
+
+      <div class="prod-slider" aria-label="Carrousel produits">
+        <button class="prod-control" data-prod="prev" aria-label="Précédent">‹</button>
+        <div class="prod-track">
+          <article class="prod-card">
+            <img src="assets/images/produit1.jpg" alt="Sablés dorés classiques">
+            <div class="prod-body">
+              <h3>Sablé doré</h3>
+              <p>Le sablé iconique, fondant et croustillant. Message gravé en option.</p>
+              <div class="prod-meta"><span>Ø 6–8 cm</span><span>À partir de 1,60€</span></div>
+              <a class="btn btn--ghost" href="#contact">Demander un devis</a>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <img src="assets/images/produit2.jpg" alt="Sablés au cacao">
+            <div class="prod-body">
+              <h3>Sablé cacao</h3>
+              <p>Goût chocolat intense. Idéal pour marquage prénom, date ou logo.</p>
+              <div class="prod-meta"><span>Formes variées</span><span>À partir de 1,80€</span></div>
+              <a class="btn btn--ghost" href="#contact">Demander un devis</a>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <img src="assets/images/produit3.jpg" alt="Sablés signature avec inclusions">
+            <div class="prod-body">
+              <h3>Sablé signature</h3>
+              <p>Couleurs, inclusions, glaçage léger : création sur‑mesure pour vos événements.</p>
+              <div class="prod-meta"><span>Palette couleur</span><span>Sur devis</span></div>
+              <a class="btn btn--ghost" href="#contact">Demander un devis</a>
+            </div>
+          </article>
+
+          <article class="prod-card">
+            <img src="assets/images/produit4.jpg" alt="Coffret cadeau biscuits">
+            <div class="prod-body">
+              <h3>Coffrets cadeaux</h3>
+              <p>Assemblages personnalisés, rubans et cartes message incluses.</p>
+              <div class="prod-meta"><span>À partir de 12 pcs</span><span>Sur devis</span></div>
+              <a class="btn btn--ghost" href="#contact">Demander un devis</a>
+            </div>
+          </article>
+        </div>
+        <button class="prod-control" data-prod="next" aria-label="Suivant">›</button>
+      </div>
+
+      <div class="prod-dots" role="tablist" aria-label="Navigation carrousel">
+        <button class="prod-dot" aria-label="Aller au slide 1" aria-controls="slide-1" aria-selected="true"></button>
+        <button class="prod-dot" aria-label="Aller au slide 2" aria-controls="slide-2"></button>
+        <button class="prod-dot" aria-label="Aller au slide 3" aria-controls="slide-3"></button>
+        <button class="prod-dot" aria-label="Aller au slide 4" aria-controls="slide-4"></button>
       </div>
     </div>
   </section>
 
   <section id="personnalisation" class="about">
     <div class="container about__wrapper">
-      <div class="about__image"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Personnalisation des biscuits"></div>
+      <div class="about__image"><img src="assets/images/personnalisation.jpg" alt="Personnalisation des biscuits"></div>
       <div class="about__content">
         <h2 class="section-title">Personnalisation</h2>
         <p class="section-subtitle">Créez un biscuit qui vous ressemble</p>
@@ -134,7 +162,7 @@
 
   <section id="apropos" class="about">
     <div class="container about__wrapper">
-      <div class="about__image"><img src="https://images.unsplash.com/photo-1514516430039-5845f26b18d7?auto=format&fit=crop&w=1200&q=80" alt="Atelier biscuiterie artisanale"></div>
+      <div class="about__image"><img src="assets/images/atelier.jpg" alt="Atelier biscuiterie artisanale"></div>
       <div class="about__content">
         <h2 class="section-title">À propos</h2>
         <p class="section-subtitle">La Délicieuserie – Biscuiterie artisanale à Calais</p>
@@ -185,7 +213,8 @@
         </ul>
         <p class="contact__info">Devis gratuit • Délais selon quantités • Emballages soignés</p>
       </div>
-      <form class="contact__form">
+      <form class="contact__form" action="https://formspree.io/f/your-id" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message depuis La Délicieuserie">
         <div class="form-group">
           <label for="name">Nom complet</label>
           <input id="name" name="name" type="text" placeholder="Votre nom" required />
