@@ -152,3 +152,30 @@ a{color:inherit;text-decoration:none}
   height: 1.05rem;
   display: inline-block;
 }
+
+
+/* ——— Accents orange (subtils) ——— */
+
+/* Barre décorative sous les titres de section */
+.section-title::after{
+  content:""; display:block; width:64px; height:4px;
+  background: var(--color-accent); border-radius:4px; margin-top:.5rem;
+}
+
+/* Points actifs du carrousel produits en orange */
+.prod-dot[aria-selected="true"]{ background: var(--color-accent); border-color: var(--color-accent); }
+
+/* Boutons fantômes : survol bordure orange + halo doux */
+.btn--ghost:hover,.btn--ghost:focus{
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(242,158,92,.18);
+}
+
+/* Contrôles sliders : hover orange */
+.slider__control:hover{ background: var(--color-accent); }
+
+/* Icônes contact : fond légèrement orangé pour harmoniser */
+.contact__icon{ background: rgba(242,158,92,.14); }
+
+/* Lien de nav : soulignement orange au survol */
+.nav-links a:hover::after,.nav-links a:focus::after{ background: var(--color-accent); }
