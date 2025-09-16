@@ -145,3 +145,10 @@ a{color:inherit;text-decoration:none}
   .hero__content{padding:2rem 1.2rem}
   .section-title{font-size:clamp(1.8rem,5vw,2.2rem)}
 }
+
+/* Inline icon sizing inside contact chip */
+.contact__icon img, .contact__icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  display: inline-block;
+}
